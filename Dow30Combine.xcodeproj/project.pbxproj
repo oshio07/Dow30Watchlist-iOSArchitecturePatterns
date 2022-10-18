@@ -18,6 +18,7 @@
 		B422427328B8F80D005DB8F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422427228B8F80D005DB8F2 /* ViewModel.swift */; };
 		B422427728BB030B005DB8F2 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422427528BB030B005DB8F2 /* StockTableViewCell.swift */; };
 		B422427828BB030B005DB8F2 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B422427628BB030B005DB8F2 /* StockTableViewCell.xib */; };
+		B45CC2B828FE951800392F49 /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CC2B728FE951800392F49 /* SortType.swift */; };
 		B45FFDA428D1C43B00BD37A8 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45FFDA328D1C43B00BD37A8 /* Stocks.swift */; };
 		B4C3577B28E96E68005F59E9 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3577A28E96E68005F59E9 /* APIKey.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		B422427228B8F80D005DB8F2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B422427528BB030B005DB8F2 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		B422427628BB030B005DB8F2 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
+		B45CC2B728FE951800392F49 /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
 		B45FFDA328D1C43B00BD37A8 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		B4C3577A28E96E68005F59E9 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 				B422429B28BB940E005DB8F2 /* Model */,
 				B422429928BB93F6005DB8F2 /* View */,
 				B422429A28BB9408005DB8F2 /* ViewModel */,
+				B45CC2B628FE950900392F49 /* Enum */,
 				B4C3577A28E96E68005F59E9 /* APIKey.swift */,
 				B422425328B8EB92005DB8F2 /* AppDelegate.swift */,
 				B422425528B8EB92005DB8F2 /* SceneDelegate.swift */,
@@ -110,6 +113,14 @@
 				B45FFDA328D1C43B00BD37A8 /* Stocks.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B45CC2B628FE950900392F49 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				B45CC2B728FE951800392F49 /* SortType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		B4C3577C28E96E81005F59E9 /* Repository */ = {
@@ -200,6 +211,7 @@
 				B422425828B8EB92005DB8F2 /* ViewController.swift in Sources */,
 				B422425428B8EB92005DB8F2 /* AppDelegate.swift in Sources */,
 				B422425628B8EB92005DB8F2 /* SceneDelegate.swift in Sources */,
+				B45CC2B828FE951800392F49 /* SortType.swift in Sources */,
 				B422427128B8F473005DB8F2 /* Stock.swift in Sources */,
 				B422427328B8F80D005DB8F2 /* ViewModel.swift in Sources */,
 				B422427728BB030B005DB8F2 /* StockTableViewCell.swift in Sources */,

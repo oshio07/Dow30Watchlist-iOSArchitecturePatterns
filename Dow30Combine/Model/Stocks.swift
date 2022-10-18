@@ -12,5 +12,3 @@ struct Stocks {
         }
     }
 }
-
-enum SortType { case alphabetical, changePercent }
