@@ -2,17 +2,8 @@ import UIKit
 import Combine
 
 final class ViewController: UIViewController {
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var segmentedControl: UISegmentedControl!
-//    {
-//        didSet {
-//            segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(sender:)), for: UIControl.Event.valueChanged)
-//        }
-//    }
-    
-
-    
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             let cell = UINib(nibName: "StockTableViewCell", bundle: nil)
@@ -26,14 +17,6 @@ final class ViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
         return refreshControl
     }()
-    
-//    private lazy var activityIndicator: UIActivityIndicatorView = {
-//        let activityIndicator = UIActivityIndicatorView()
-//        activityIndicator.center = view.center
-//        activityIndicator.style = .large
-//        view.addSubview(activityIndicator)
-//        return activityIndicator
-//    }()
     
     private let viewModel = ViewModel()
     private var cancellables = Set<AnyCancellable>()
@@ -81,7 +64,7 @@ final class ViewController: UIViewController {
             .store(in: &cancellables)
     }
     
-    @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+    @IBAction private func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         selectedSegmentedIndex.send(sender.selectedSegmentIndex)
     }
     
