@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         return refreshControl
     }()
     
@@ -68,7 +68,7 @@ final class ViewController: UIViewController {
         selectedSegmentedIndex.send(sender.selectedSegmentIndex)
     }
     
-    @objc private func refresh(sender: UISegmentedControl) {
+    @objc private func refresh() {
         Task { await viewModel.fetch() }
     }
 }
