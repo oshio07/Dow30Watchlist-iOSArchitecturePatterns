@@ -20,8 +20,8 @@ final class APIClient {
         try await withThrowingTaskGroup(of: (String, Data).self) { group in
             for stockDTO in stockDTOs {
                 group.addTask {
-                    let url = URL(string: stockDTO.image)
-                    let (data, _) = try await URLSession.shared.data(from: url!)
+                    let url = stockDTO.image
+                    let (data, _) = try await URLSession.shared.data(from: url)
                     return (stockDTO.symbol, data)
                 }
             }

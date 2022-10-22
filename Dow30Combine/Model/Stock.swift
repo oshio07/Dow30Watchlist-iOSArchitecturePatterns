@@ -21,5 +21,5 @@ struct StockDTO: Decodable {
     let price: Double
     let changes: Double
     let companyName: String
-    let image: String // URL
+    let image: URL
 }
