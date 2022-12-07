@@ -3,7 +3,7 @@
 A sample application that simply displays the price and percentage change of the 30 stocks in the Dow Jones Industrial Average.  
 ダウ平均30銘柄の株価と騰落率を表示するシンプルなサンプルアプリケーション。
 
-Data provided by Financial Modeling Prep (https://financialmodelingprep.com/developer/docs/)
+Data provided by [Financial Modeling Prep](https://site.financialmodelingprep.com/developer/docs/)
 
 - [SwiftUI-MVVM](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/SwiftUI-MVVM%20)
 - [UIKit-MVC](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/UIKit-MVC%20)
