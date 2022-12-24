@@ -42,7 +42,7 @@ final class ViewController: UIViewController {
     private func bind() {
         viewModel.outputs.updatedStocksObservable
             .observe(on: MainScheduler.instance)
-            .map { $0.stocks }
+            .map { $0.value }
             .bind(to: tableView.rx.items) { (tableView, _, stock) in
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "StockTableViewCell") as? StockTableViewCell else { return .init() }
                 cell.configure(stock: stock)

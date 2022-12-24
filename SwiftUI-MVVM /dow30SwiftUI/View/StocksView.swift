@@ -41,7 +41,7 @@ struct StocksView: View {
     }
     
     private var stockList: some View {
-        List(viewModel.stocks.stocks) { stock in
+        List(viewModel.stocks.value) { stock in
             StockView(stock: stock)
         }
         .listRowBackground(Color(.systemBackground))

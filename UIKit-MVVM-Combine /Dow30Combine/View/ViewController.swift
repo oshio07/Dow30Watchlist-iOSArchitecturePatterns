@@ -75,13 +75,13 @@ final class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.stocks.stocks.count
+        viewModel.stocks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "StockTableViewCell", for: indexPath) as? StockTableViewCell
         else { return .init() }
-        cell.configure(stock: viewModel.stocks.stocks[indexPath.row])
+        cell.configure(stock: viewModel.stocks[indexPath.row])
         return cell
      }
 }

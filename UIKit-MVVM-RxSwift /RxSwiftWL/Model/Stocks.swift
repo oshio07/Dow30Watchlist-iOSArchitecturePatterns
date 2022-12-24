@@ -1,14 +1,16 @@
 import Foundation
 
 struct Stocks {
-    private(set) var stocks: [Stock]
+    private(set) var value: [Stock]
+
+    init(stocks: [Stock]) { value = stocks }
     
-    init(stocks: [Stock]) { self.stocks = stocks }
-    
+    var count: Int { value.count }
+            
     mutating func sort(by sortType: SortType) {
         switch sortType {
-        case .alphabetical: stocks.sort { $0.symbol < $1.symbol }
-        case .changePercent: stocks.sort { $1.changePercent < $0.changePercent }
+        case .alphabetical: value.sort { $0.symbol < $1.symbol }
+        case .changePercent: value.sort { $1.changePercent < $0.changePercent }
         }
     }
 }
