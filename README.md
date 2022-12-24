@@ -19,5 +19,8 @@ https://user-images.githubusercontent.com/114917347/196563915-f54fd7b6-17d3-47b1
 Assign your API Key in `APIClient`.
 
 ```swift
-private let apiKey: String = APIKey.key // Assign your key.
+    private var apiKeyQuery = URLQueryItem(
+        name: "apikey",
+        value: APIKey.key // Asign Your Key
+    )
 ```
