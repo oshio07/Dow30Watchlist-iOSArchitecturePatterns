@@ -28,7 +28,12 @@ final class ViewModel: ObservableObject {
             self.stocks.sort(by: selectedSortType)
         } catch {
             print("Error: ", error)
-            showingAlert = (true, error.localizedDescription)
+            if case APIClientError.responseError(let code) = error,
+               let code {
+                showingAlert = (true, String(code) + "/n" + error.localizedDescription)
+            } else {
+                showingAlert = (true, error.localizedDescription)
+            }
         }
     }
 }

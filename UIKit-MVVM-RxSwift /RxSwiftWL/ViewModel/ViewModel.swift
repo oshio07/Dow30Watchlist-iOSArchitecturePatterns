@@ -62,6 +62,12 @@ final class StocksViewModel: ViewModelType, ViewModelInputs, ViewModelOutputs {
         } catch {
             print("error: ", error)
             _fetchFailed.accept(error.localizedDescription)
+            if case APIClientError.responseError(let code) = error,
+               let code {
+                _fetchFailed.accept(String(code) + "/n" + error.localizedDescription)
+            } else {
+                _fetchFailed.accept(error.localizedDescription)
+            }
         }
     }
 }

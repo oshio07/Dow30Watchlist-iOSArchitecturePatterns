@@ -54,7 +54,12 @@ extension Presenter: InteractorOutput {
                 self.stocks = Stocks(stocks: stocks)
                 view?.reloadData()
             case .failure(let error):
-                view?.showAlert(title: error.localizedDescription)
+                if case APIClientError.responseError(let code) = error,
+                   let code {
+                    view?.showAlert(title: String(code) + "/n" + error.localizedDescription)
+                } else {
+                    view?.showAlert(title: error.localizedDescription)
+                }
             }
             isLoading = false
         }

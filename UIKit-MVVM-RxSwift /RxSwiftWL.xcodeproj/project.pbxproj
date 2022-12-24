@@ -18,7 +18,6 @@
 		B422427328B8F80D005DB8F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422427228B8F80D005DB8F2 /* ViewModel.swift */; };
 		B422427728BB030B005DB8F2 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422427528BB030B005DB8F2 /* StockTableViewCell.swift */; };
 		B45CC2BE28FE99AC00392F49 /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CC2BD28FE99AC00392F49 /* SortType.swift */; };
-		B45EEEAF28E43B2E002AC74C /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EEEAE28E43B2E002AC74C /* APIKey.swift */; };
 		B45FFDA628D1CAB700BD37A8 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45FFDA528D1CAB700BD37A8 /* Stocks.swift */; };
 		B46FAE6328E448A200581533 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B46FAE6228E448A200581533 /* RxCocoa */; };
 		B46FAE6528E448A200581533 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B46FAE6428E448A200581533 /* RxRelay */; };
@@ -41,7 +40,6 @@
 		B422427528BB030B005DB8F2 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		B422427628BB030B005DB8F2 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		B45CC2BD28FE99AC00392F49 /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
-		B45EEEAE28E43B2E002AC74C /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		B45FFDA528D1CAB700BD37A8 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +78,9 @@
 			children = (
 				B45CC2BC28FE99A100392F49 /* Enum */,
 				B422429B28BB940E005DB8F2 /* Model */,
-				B45EEEB028E43C78002AC74C /* Repository */,
+				B45EEEB028E43C78002AC74C /* APIClient */,
 				B422429928BB93F6005DB8F2 /* View */,
 				B422429A28BB9408005DB8F2 /* ViewModel */,
-				B45EEEAE28E43B2E002AC74C /* APIKey.swift */,
 				B422425328B8EB92005DB8F2 /* AppDelegate.swift */,
 				B422425528B8EB92005DB8F2 /* SceneDelegate.swift */,
 				B422425C28B8EB93005DB8F2 /* Assets.xcassets */,
@@ -129,12 +126,12 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		B45EEEB028E43C78002AC74C /* Repository */ = {
+		B45EEEB028E43C78002AC74C /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
 				B422426E28B8EF12005DB8F2 /* APIClient.swift */,
 			);
-			path = Repository;
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +222,6 @@
 				B422427328B8F80D005DB8F2 /* ViewModel.swift in Sources */,
 				B422427728BB030B005DB8F2 /* StockTableViewCell.swift in Sources */,
 				B45FFDA628D1CAB700BD37A8 /* Stocks.swift in Sources */,
-				B45EEEAF28E43B2E002AC74C /* APIKey.swift in Sources */,
 				B422426F28B8EF12005DB8F2 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,6 @@
 		B45CC2C128FE9AA200392F49 /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CC2C028FE9AA200392F49 /* SortType.swift */; };
 		B45FFD9C28CDDC6500BD37A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45FFD9B28CDDC6500BD37A8 /* ViewModel.swift */; };
 		B45FFDA828D1CAE600BD37A8 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45FFDA728D1CAE600BD37A8 /* Stocks.swift */; };
-		B4C3577E28E96F1E005F59E9 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3577D28E96F1E005F59E9 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		B45CC2C028FE9AA200392F49 /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
 		B45FFD9B28CDDC6500BD37A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B45FFDA728D1CAE600BD37A8 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
-		B4C3577D28E96F1E005F59E9 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				B422428528BB1B20005DB8F2 /* dow30SwiftUIApp.swift */,
-				B45CC2B428FD46ED00392F49 /* Repository */,
+				B45CC2B428FD46ED00392F49 /* APIClient */,
 				B45FFDA028CDE51300BD37A8 /* Model */,
 				B45FFD9F28CDE50900BD37A8 /* View */,
 				B45FFDA128CDFA2C00BD37A8 /* ViewModel */,
-				B4C3577D28E96F1E005F59E9 /* APIKey.swift */,
 				B45CC2BF28FE9A9600392F49 /* Enum */,
 				B422428928BB1B21005DB8F2 /* Assets.xcassets */,
 				B422428B28BB1B21005DB8F2 /* Preview Content */,
@@ -86,12 +83,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B45CC2B428FD46ED00392F49 /* Repository */ = {
+		B45CC2B428FD46ED00392F49 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
 				B422429328BB1B4D005DB8F2 /* APIClient.swift */,
 			);
-			path = Repository;
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		B45CC2BF28FE9A9600392F49 /* Enum */ = {
@@ -200,7 +197,6 @@
 			files = (
 				B422429828BB1BDD005DB8F2 /* StockView.swift in Sources */,
 				B422428828BB1B20005DB8F2 /* StocksView.swift in Sources */,
-				B4C3577E28E96F1E005F59E9 /* APIKey.swift in Sources */,
 				B422428628BB1B20005DB8F2 /* dow30SwiftUIApp.swift in Sources */,
 				B45CC2C128FE9AA200392F49 /* SortType.swift in Sources */,
 				B422429628BB1B80005DB8F2 /* Stock.swift in Sources */,

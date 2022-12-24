@@ -72,7 +72,7 @@
 		B422425228B8EB92005DB8F2 /* Dow30Combine */ = {
 			isa = PBXGroup;
 			children = (
-				B4C3577C28E96E81005F59E9 /* Repository */,
+				B4C3577C28E96E81005F59E9 /* APIClient */,
 				B422429B28BB940E005DB8F2 /* Model */,
 				B422429928BB93F6005DB8F2 /* View */,
 				B422429A28BB9408005DB8F2 /* ViewModel */,
@@ -123,12 +123,12 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		B4C3577C28E96E81005F59E9 /* Repository */ = {
+		B4C3577C28E96E81005F59E9 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
 				B422426E28B8EF12005DB8F2 /* APIClient.swift */,
 			);
-			path = Repository;
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

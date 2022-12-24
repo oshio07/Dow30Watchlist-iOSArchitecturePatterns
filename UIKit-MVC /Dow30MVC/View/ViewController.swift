@@ -54,12 +54,22 @@ final class ViewController: UIViewController {
                 tableView.reloadData()
             } catch {
                 print("Error: ", error)
-                let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-                alert.addAction(.init(title: "Close", style: .cancel, handler: nil))
-                present(alert, animated: true)
+                if case APIClientError.responseError(let code) = error,
+                   let code {
+                    showAlert(title: String(code) + "/n" + error.localizedDescription)
+                } else {
+                    showAlert(title: error.localizedDescription)
+                }
+
             }
             isLoading = false
         }
+    }
+    
+    private func showAlert(title: String) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alert.addAction(.init(title: "Close", style: .cancel, handler: nil))
+        present(alert, animated: true)
     }
 }
 
