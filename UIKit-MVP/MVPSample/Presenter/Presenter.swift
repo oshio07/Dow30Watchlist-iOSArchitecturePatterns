@@ -21,22 +21,18 @@ final class Presenter {
         }
     }
     
-    private var interactor: Interactor!
     private weak var view: PresenterOutput!
     
     init(view: PresenterOutput) {
         self.view = view
-        self.interactor = Interactor(presenter: self)
     }
     
     func viewDidLoad() {
-        isLoading = true
-        interactor.fetch()
+        fetch()
     }
     
     @objc func refresh() {
-        isLoading = true
-        interactor.fetch()
+        fetch()
     }
     
     func segmentedControlValueChanged(selectedSegmentIndex: Int) {
@@ -44,16 +40,16 @@ final class Presenter {
         stocks.sort(by: selectedSortType)
         view?.reloadData()
     }
-}
-
-extension Presenter: InteractorOutput {
-    func didFetch(result: Result<[Stock], Error>) {
+    
+    private func fetch() {
         Task { @MainActor in
-            switch result {
-            case .success(let stocks):
+            isLoading = true; defer { isLoading = false }
+            do {
+                let stocks = try await APIClient.shared.fetchStockData(symbols: ["AAPL", "MSFT", "DIS", "KO", "MCD", "NKE", "V", "JNJ", "AXP", "AMGN", "BA", "CAT", "CSCO", "CVX", "GS", "HD", "HON", "IBM", "INTC", "JPM", "MMM", "MRK", "PG", "TRV", "UNH", "CRM", "VZ", "WBA", "WMT", "DOW"])
                 self.stocks = Stocks(stocks: stocks)
                 view?.reloadData()
-            case .failure(let error):
+            } catch {
+                print("Error: ", error)
                 if case APIClientError.responseError(let code) = error,
                    let code {
                     view?.showAlert(title: String(code) + "/n" + error.localizedDescription)
@@ -61,7 +57,6 @@ extension Presenter: InteractorOutput {
                     view?.showAlert(title: error.localizedDescription)
                 }
             }
-            isLoading = false
         }
     }
 }

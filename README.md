@@ -7,7 +7,7 @@ Data provided by [Financial Modeling Prep](https://site.financialmodelingprep.co
 
 - [SwiftUI-MVVM](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/SwiftUI-MVVM%20)
 - [UIKit-MVC](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/UIKit-MVC%20)
-- [UIKit-MVPWithInteractor](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/UIKit-MVPWithInteractor)
+- [UIKit-MVP](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/UIKit-MVPWithInteractor)
 - [UIKit-MVVM-Combine](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/UIKit-MVVM-Combine%20)
 - [UIKit-MVVM-RxSwift](https://github.com/oshio07/Dow30Watchlist-iOSArchitecturePatterns/tree/main/UIKit-MVVM-RxSwift%20)
 

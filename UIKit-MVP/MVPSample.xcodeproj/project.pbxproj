@@ -20,7 +20,6 @@
 		B45CC2BB28FE970300392F49 /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CC2BA28FE970300392F49 /* SortType.swift */; };
 		B45FFDA428D1C43B00BD37A8 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45FFDA328D1C43B00BD37A8 /* Stocks.swift */; };
 		B4C3578028E97816005F59E9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3577F28E97816005F59E9 /* Presenter.swift */; };
-		B4C3578228E98E62005F59E9 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3578128E98E62005F59E9 /* Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		B45CC2BA28FE970300392F49 /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
 		B45FFDA328D1C43B00BD37A8 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		B4C3577F28E97816005F59E9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		B4C3578128E98E62005F59E9 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 			children = (
 				B45CC2B328FD461D00392F49 /* APIClient */,
 				B422429B28BB940E005DB8F2 /* Model */,
-				B4C3578328E9AD4F005F59E9 /* Interactor */,
 				B4C3578428E9AD5B005F59E9 /* Presenter */,
 				B422429928BB93F6005DB8F2 /* View */,
 				B45CC2B928FE96F600392F49 /* Enum */,
@@ -121,14 +118,6 @@
 				B45CC2BA28FE970300392F49 /* SortType.swift */,
 			);
 			path = Enum;
-			sourceTree = "<group>";
-		};
-		B4C3578328E9AD4F005F59E9 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				B4C3578128E98E62005F59E9 /* Interactor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		B4C3578428E9AD5B005F59E9 /* Presenter */ = {
@@ -217,7 +206,6 @@
 			files = (
 				B422425828B8EB92005DB8F2 /* ViewController.swift in Sources */,
 				B422425428B8EB92005DB8F2 /* AppDelegate.swift in Sources */,
-				B4C3578228E98E62005F59E9 /* Interactor.swift in Sources */,
 				B422425628B8EB92005DB8F2 /* SceneDelegate.swift in Sources */,
 				B422427128B8F473005DB8F2 /* Stock.swift in Sources */,
 				B45CC2BB28FE970300392F49 /* SortType.swift in Sources */,
