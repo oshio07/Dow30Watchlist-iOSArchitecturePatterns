@@ -97,3 +97,21 @@ extension APIClient {
         }
     }
 }
+
+private struct StockDTO: Decodable {
+    let symbol: String
+    let price: Double
+    let changes: Double
+    let companyName: String
+    let image: URL
+}
+
+private extension Stock {
+    init(stockDTO: StockDTO, logoData: Data?) {
+        self.symbol = stockDTO.symbol
+        self.companyName = stockDTO.companyName
+        self.price = stockDTO.price
+        self.changePercent = stockDTO.changes / (stockDTO.price - stockDTO.changes) * 100
+        self.logoData = logoData
+    }
+}
